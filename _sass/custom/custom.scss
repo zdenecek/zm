@@ -12,81 +12,80 @@ span.spades {
 }
 
 .main-content {
-  * {
-      line-height: 1.2em;
-  }
+    * {
+        line-height: 1.2em;
+    }
 
-  blockquote {
-      margin-top: 1.5em !important;
-      margin-left: 0;
-  }
+    blockquote {
+        margin-top: 1.5em !important;
+        margin-left: 0;
+    }
 
-  blockquote :is(p, h2, h3, h4) {
-      display: inline-block;
-      font-size: 16px !important;
-      margin: 0;
-      padding: 4px;
-      font-weight: bold;
-      border: 2px solid skyblue;
-      border-radius: 4px;
+    blockquote :is(p, h2, h3, h4) {
+        display: inline-block;
+        font-size: 16px !important;
+        margin: 0;
+        padding: 4px;
+        font-weight: bold;
+        border: 2px solid skyblue;
+        border-radius: 4px;
+    }
 
-  }
+    blockquote + dl {
+        margin-top: -1em;
+    }
 
-  blockquote + dl {
-    margin-top: -1em;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0;
+    }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-      margin-bottom: 0;
-  }
+    dl {
+        padding-left: 4px;
+        padding-top: 4px;
+        border-left: 2px double greenyellow;
+    }
 
-  dl {
-      padding-left: 4px;
-      padding-top: 4px;
-      border-left: 2px solid skyblue;
-  }
+    ul,
+    ol {
+        margin-top: 0;
+    }
 
-  ul,
-  ol {
-      margin-top: 0;
-  }
+    dl {
+        grid-template-columns: min-content auto;
+    }
 
-  dl {
-      grid-template-columns: min-content auto;
-  }
+    dt {
+        text-align: left;
+        white-space: nowrap;
+        &::after {
+            //remove colon
+            content: "";
+        }
+    }
 
-  dt {
-      text-align: left;
-      white-space: nowrap;
-      &::after {
-          //remove colon
-          content: "";
-      }
-  }
+    dt,
+    dd {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.2em;
+    }
 
-  dt,
-  dd {
-      margin-top: 0;
-      margin-bottom: 0;
-      line-height: 1.2em;
-  }
+    // remove negative margin for dl
 
-  // remove negative margin for dl
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  #markdown-toc {
-      + dl {
-          margin-top: 0em;
-      }
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    #markdown-toc {
+        + dl {
+            margin-top: 0em;
+        }
+    }
 }
