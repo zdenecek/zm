@@ -17,6 +17,3 @@ defaults:
 
 # logo: "/assets/images/logo.png"
 # search_enabled: false
-
-
-theme: jekyll-theme-cayman
