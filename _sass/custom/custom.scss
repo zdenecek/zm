@@ -1,14 +1,14 @@
 span.clubs {
-    color: #32ad01;
+    color: purple;
 }
 span.diamonds {
-    color: #ff9b00;
+    color: orangered;
 }
 span.hearts {
     color: #ff0000;
 }
 span.spades {
-    color: #33339b;
+    color: black;
 }
 
 .main-content {
@@ -27,7 +27,7 @@ span.spades {
         margin: 0;
         padding: 4px;
         font-weight: bold;
-        border: 2px solid skyblue;
+        border: 2px solid greenyellow;
         border-radius: 4px;
     }
 
